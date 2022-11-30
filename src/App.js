@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import { Routes, Route, Link } from "react-router-dom";
 import './App.css';
+import FAQ from './components/FAQ';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
+        <Route path="faq" element={<FAQ />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
