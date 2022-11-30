@@ -6,7 +6,7 @@ function FAQ() {
       <main>
         <h2>FAQ</h2>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, delectus.
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, delectus
         </p>
       </main>
       <nav>
