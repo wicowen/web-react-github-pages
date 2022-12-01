@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
 import { Routes, Route, Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import './App.css';
 import FAQ from './components/FAQ';
 
@@ -32,6 +33,7 @@ function Home() {
 }
 
 function About() {
+  let navigate = useNavigate();
   return (
     <>
       <main>
@@ -41,11 +43,16 @@ function About() {
         </p>
       </main>
       <nav>
-        <Link to="/">Home</Link>
+        <input type="button" value="Home" onClick={(e)=>{
+          navigate("/")
+        }} />
+        {/* <Link to="/">Home</Link> */}
       </nav>
     </>
   );
 }
+
+
 
 function NotFound() {
   return (
